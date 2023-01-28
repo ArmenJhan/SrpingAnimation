@@ -8,31 +8,32 @@
 import UIKit
 import SpringAnimation
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
-    // MARK: Outlets
+    // MARK: IBOutlets
     @IBOutlet var springView: SpringView!
     @IBOutlet var presetLabel: UILabel!
     
+    // MARK: Private properties
     private var animation = Animation.getAnimation()
     
+    //MARK: Life Circle View Controller
     override func viewDidLoad() {
         super.viewDidLoad()
-        presetLabel.text = animation.fullParametrs
+        presetLabel.text = animation.description
     }
 
-
-    @IBAction func startAnimation(_ sender: SpringButton) {
+    //MARK: IBActions
+    @IBAction func startAnimation(_ sender: UIButton) {
+        presetLabel.text = animation.description
 
         springView.animation = animation.preset
         springView.curve = animation.curve
         springView.force = animation.force
         springView.duration = animation.duration
 
-
         springView.animate()
         
-        presetLabel.text = animation.fullParametrs
         animation = Animation.getAnimation()
         sender.setTitle("Run \(animation.preset)", for: .normal)
     }

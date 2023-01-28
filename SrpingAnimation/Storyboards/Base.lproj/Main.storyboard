@@ -45,7 +45,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxY-y4-lmh" customClass="SpringButton" customModule="SpringAnimation">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxY-y4-lmh">
                                 <rect key="frame" x="35" y="439" width="250" height="34.5"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <state key="normal" title="Button"/>

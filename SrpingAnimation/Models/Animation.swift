@@ -11,13 +11,13 @@ struct Animation {
     let force: Double
     let duration: Double
     
-    var fullParametrs: String {
-            """
-            Preset: \(preset)
-            Curve" \(curve)
-            Force: \(String(format: "%.2f", force))
-            Duration: \(String(format: "%.2f",duration))
-            """
+    var description: String {
+        """
+        Preset: \(preset)
+        Curve" \(curve)
+        Force: \(String(format: "%.2f", force))
+        Duration: \(String(format: "%.2f",duration))
+        """
     }
     
     static func getAnimation() -> Animation {
